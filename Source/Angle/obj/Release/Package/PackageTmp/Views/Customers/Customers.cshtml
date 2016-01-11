@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="content-heading">
+    <!-- START Language list-->
+    <div class="pull-right">
+        <button type="button" class="btn btn-labeled btn-info">
+            <span class="btn-label">
+                <i class="fa fa-plus"></i>
+            </span>
+            New Customer
+        </button>
+    </div>
+    <!-- END Language list    -->
+    Customers
+    @*<small>{{ 'dashboard.WELCOME' | translate:{ appName: app.name } }} !</small>*@
+</div>
+
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <input type="email" placeholder="Search Customers" class="form-control custSearch">
+        </div>
+
+        <div class="col-sm-12">
+            <br />
+        </div>
+
+            <div class="col-lg-3">
+                
+                
+                    <div class="panel widget">
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <span class="placeImg">IM</span>
+                                </div>
+                                <div class="col-xs-9">
+                                    <h3 class="mt0">Imagesoft</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-sm">
+                                            <em class="fa fa-map-marker fa-fw"></em>Traralgon, VIC
+                                        </li>
+                                        <li class="mb-sm">
+                                            <em class="fa fa-phone fa-fw"></em>(03) 5133 8241
+                                        </li>
+                                        <li class="mb-sm">
+                                            <em class="fa fa-envelope fa-fw"></em>support@imagesoft.com.au
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="panel-footer  editCard">
+                            <div class="row text-center">
+                                <div class="col-xs-4 editBtn">
+                                    <a class="btn text-danger btn-block" data-toggle="modal" data-target="#delete"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                                <div class="col-xs-4 editBtn">
+                                    <a class="btn btn-block text-warning" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i> Edit</a>
+                                </div>
+                                <div class="col-xs-4 editBtn">
+                                    <a href="#/viewcustomer" class="btn btn-block text-info" data-toggle="modal" data-target="#view"><i class="fa fa-binoculars"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="panel widget">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <span class="placeImg">DY</span>
+                            </div>
+                            <div class="col-xs-9">
+                                <h3 class="mt0">Dyers</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-sm">
+                                        <em class="fa fa-map-marker fa-fw"></em>Sale, VIC
+                                    </li>
+                                    <li class="mb-sm">
+                                        <em class="fa fa-phone fa-fw"></em>(03) 5133 8241
+                                    </li>
+                                    <li class="mb-sm">
+                                        <em class="fa fa-envelope fa-fw"></em>admin@dyers.com.au
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer  editCard">
+                        <div class="row text-center">
+                            <div class="col-xs-4 editBtn">
+                                <a class="btn text-danger btn-block" data-toggle="modal" data-target="#delete"><i class="fa fa-trash"></i> Delete</a>
+                            </div>
+                            <div class="col-xs-4 editBtn">
+                                <a class="btn btn-block text-warning" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i> Edit</a>
+                            </div>
+                            <div class="col-xs-4 editBtn">
+                                <a href="#/viewcustomer" class="btn btn-block text-info" data-toggle="modal" data-target="#view"><i class="fa fa-binoculars"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,184 @@
+﻿@{
+    Layout = null;
+}
+
+
+<div class="content-heading">
+    <!-- START Language list-->
+    <div class="pull-right">
+        <button type="button" class="btn btn-labeled btn-info">
+            <span class="btn-label">
+                <i class="fa fa-plus"></i>
+            </span>
+            New Customer
+        </button>
+    </div>
+    <!-- END Language list    -->
+    View Customer
+    @*<small>{{ 'dashboard.WELCOME' | translate:{ appName: app.name } }} !</small>*@
+</div>
+
+
+<div class="container-fluid">
+
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-3">
+                <a class="placeImg">DY</a>
+                <hr>
+                <a class="btn btn-block btn-inverse"> Rates</a>
+                <a class="btn btn-block btn-inverse"> Invoices</a>
+                <a class="btn btn-block btn-inverse"> Financial Summary</a>
+            </div>
+            <div class="col-xs-9">
+                <form class="form-horizontal">
+                    <div role="tabpanel">
+                        <ul role="tablist" class="nav nav-tabs">
+                            <li role="presentation" class="active">
+                                <a href="#vcustomer" aria-controls="customer" role="tab" data-toggle="tab" aria-expanded="true">Customer Details</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#vcontact" aria-controls="contact" role="tab" data-toggle="tab" aria-expanded="false">Contact Details</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#valtdetails" aria-controls="altdetails" role="tab" data-toggle="tab" aria-expanded="false">Alt Details</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#vinvoicing" aria-controls="invoicing" role="tab" data-toggle="tab" aria-expanded="false">Invoicing</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="vcustomer" role="tabpanel" class="tab-pane active">
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">ID</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                    <label class="col-lg-2 control-label">Code</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Name</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Address 1</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Address 2</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Town</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">State</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                    <label class="col-lg-2 control-label">Postcode</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">A.B.N</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="vcontact" role="tabpanel" class="tab-pane">
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Name</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Email</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Phone</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                    <label class="col-lg-2 control-label">Fax</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="valtdetails" role="tabpanel" class="tab-pane">
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Name</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Address 1</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Address 2</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Town</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">State</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                    <label class="col-lg-2 control-label">Postcode</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="vinvoicing" role="tabpanel" class="tab-pane">
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Email</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Credit Limit</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" placeholder="" disabled="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
